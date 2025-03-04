@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"content="width=device-width, initial-scale=1.0">
+	<title>TRAIN FARE GUIDE</title>
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"; rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<body>
+	
+
+<style>
+
+h1 {text-align: center; color: #e57f7a ; background-color: #f5d9da}
+
+body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        .title {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            background: black;
+            color: white;
+            padding: 10px;
+            width: 100%;
+        }
+
+        .wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            padding: 20px;
+            max-width: 1000px;
+        }
+
+        .map {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .map img {
+            max-width: 100%;
+            height: 100%;
+            border-radius: 10px;
+        }
+
+        .fare-info {
+            flex: 1;
+            text-align: center;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .fare-info h2 {
+            background: black;
+            color: white;
+            padding: 8px;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+
+        .stations {
+            background: lightpink;
+            padding: 10px;
+            font-size: 18px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+
+        .fare-options {
+            margin-top: 10px;
+        }
+
+        .fare-options button {
+            margin: 5px;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+
+        .fare-options .regular {
+            background: lightgreen;
+        }
+
+        .fare-options .discount {
+            background: lightcoral;
+        }
+
+        .ticket {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: darkred;
+            color: white;
+            font-size: 50px;
+            font-weight: bold;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            min-width: 150px;
+            text-align: right;
+        }
+
+
+</style>
+
+
+
+	<nav class="navbar navbar-expand-sm bg-secondary navbar-dark" >
+        <div class="container-fluid">
+
+            <a class="navbar-brand" href="#"> <img src="train.jpg" alt="logo" width="50px" height="50px" class="rounded-circle"> </a>
+
+            <div class="collapse navbar-collapse">
+
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"> <a class="nav-link" href="index.html"> ⋆˙⟡  ➜ home  </a> </li>                    
+                    <li class="nav-item"> <a class="nav-link" href="page2.html"> transit schedule ⩇⩇:⩇⩇ </a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="page3.html"> contact us ‧₊˚ ☎︎</a> </li>
+                   
+                </ul>
+
+                <form class="d-flex">
+                    <input class="form-control" type="text" placeholder="search...">
+                    <button class="btn btn-success" type="button"> Search </button>
+                </form>
+
+            </div>
+        </div>
+    </nav>
+
+<h1> ᯓ 𝗧𝗥𝗔𝗜𝗡 𝗙𝗔𝗥𝗘 𝗚𝗨𝗜𝗗𝗘 ⋆ ˚｡ </h1>
+
+
+
+
+
+    <div class="wrapper">
+     
+        <div class="map">
+            <img src="map.jpg" alt="Train Map">
+        </div>
+
+
+        <div class="fare-info">
+            <h2>LEAVING FROM:</h2>
+            <div class="stations">NORTH AVE.</div>
+
+            <h2>GOING TO:</h2>
+            <div class="stations">TAFT</div>
+
+            <div class="fare-options">
+                <button class="regular">Regular Fare</button>
+                <button class="discount">Discounted Fare</button>
+            </div>
+
+            <img src="ticket.jpg" alt="Train Ticket" width="300">
+        </div>
+
+        <div class="ticket">₱ 28.00</div>
+<script>
+
+        function check_discount(){
+        var night1 = document.getElementById('night').value;
+        var disc1 = document.getElementById('discount').value;
+        var final_rate = night1 - (disc1 * night1);
+
+        window.alert('Your ticket price is '  + final_rate);
+
+</script>
+
+
+
+
+
+
+</head>
+</html>
+</body>
